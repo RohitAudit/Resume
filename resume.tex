@@ -1,0 +1,265 @@
+
+\documentclass[a4paper,12pt]{extreport}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }\vspace{-3pt}
+}
+
+\newcommand{\resumeitemone}[1]{
+  \item\small{
+    {#1}
+  }\vspace{-3pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumesub}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumesubs}[2]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/RoronaRohit}{\Large Rohit Aggarwal}} & Email : \href{mailto:737rohit.a@gmail.com}{737rohit.a@gmail.com}\\
+  \href{https://github.com/RoronaRohit}{https://github.com/RoronaRohit} & Mobile : +91-9990639122 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Bombay}{Mumbai,India}
+      {B.Tech (Aerospace Engineering) (CPI-6.66)}{July 2014 -- August 2018}
+     \resumeSubheading
+      {Aggarwal Public School}{Faridabad,India}
+      {High School (percentage- 94.2)}{July 2012 -- May-2014}
+  \resumeSubHeadingListEnd
+
+
+%----------Scholastic Activities-----------------
+\section{Scholastic Achievements}
+  \begin{itemize}\itemsep \isep
+    \item
+      {Scored 1762 AIR in JEE advance for which more than 5 lakh students appear}\\[-4cm]
+    \item
+      {Selected for KVPY scholarship (2013-14) for which only 1200 students were selected }\\[-4cm]
+    \item
+    {Cleared PGDBA exam in which 600 applicants are selected all over India }\\[-8cm]
+
+ 
+  \end{itemize}
+  
+  %-----------NLP projects-----------------
+\section{NLP projects}
+  \resumeSubHeadingListStart
+    \resumesub
+      {Sentiment Analysis of Movie reviews}{June 2017 - July 2017}
+      \resumeItemListStart
+      \resumeitemone{Analysed the sentiment of movie reviews by performing TF-IDF vectorization and splitting the dataset into training and testing set}
+        \resumeitemone{Compared performance of Multimonial and Naive Bayes classifier used for binary classification}
+        \resumeitemone{Calculated the accuracy of both the algorithms using AUC score and confusion matrix}
+        
+
+      \resumeItemListEnd
+      
+    \resumesub
+      {Clause Search}{June 2019 - July 2019}
+      \resumeItemListStart
+        \resumeitemone{Performed Optical Character Recognition on the pdf documents to extract text from them.}
+        \resumeitemone{Then split each document into clauses and stored them into array}
+        \resumeitemone{Used regex and K-means to search for important clauses according to the problem statement}
+        \resumeitemone{Used TextRank for the summarizing of the clauses extracted}
+
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CAPGEMINI}{Bangalore}
+      {Associate Consultant (Airbus)}{September 2018 - Present}
+      \resumeItemListStart
+        \resumeitemone{Currently working as a software Developer in Airbus on PDM link system }
+        \resumeitemone{Handling their inventory management website which involves Database migrations, extracting data, parsing it, developing back-end services for the same and passing it to the front-end}
+        \resumeitemone{Helped senior developer with the creation of Batch Files so that system setup can be automated}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Academic Projects-----------------
+\section{College Technical Projects/ Courses}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {K-mean Clustering using CUDA}{Course Project, HPSC}
+      {Guide:Prof. Shivasubramanian Gopalakrishnan}{Jan 2018 - April 2018}
+      \resumeItemListStart
+        \resumeitemone{Finding the activity (sitting ,standing ,running) a person is performing depending on his heartbeat.}
+        \resumeitemone{Used K-means clustering algorithm for the unstructured data and parallelized it for a faster algorithm using process parallelizing in GPU computing}
+        \resumeitemone{Achieved twice as fast algorithm with OpenCL and ten times faster algorithm using GPU computing}
+      \resumeItemListEnd
+      
+          \resumeSubheading
+      {Learning Classifier System}{Supervised Learning Project}
+      {Guide:Prof. R.P.Shimpi}{Jan 2018 - April 2018}
+      \resumeItemListStart
+        \resumeitemone{Studied various genetic and meta-heuristic algorithms as part of Optimization course and used FirefLy algorithm for optimization of multi-modal function using MATLAB }
+        \resumeitemone{LCS algorithms are a combination of machine learning tools and Genetic Algorithms. Search part of Neural networks can be replaced by genetic algorithm's search methods}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Precision Airdrop Delivery System}{Design Project}
+      {Guide:Prof. G.R.Shevre}{May 2018 - July 2018}
+      \resumeItemListStart
+        \resumeitemone{Did research on various Airdrop delivery systems with my team members}
+        \resumeitemone{Designed a CAD model for Para-glider that could deliver an Anti-Aircraft Gun where helicopters can't reach at high altitudes such as Siachin. Also, did CFD analysis for the same}
+        \resumeitemone{Navigated the para-glider to the drop point using 3 degree of freedom system analysis}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Drop Test}{Summer Undergraduate Summer Project}
+      {Guide:Arindrajit Chowdhary}{May 2016 - July 2018}
+      \resumeItemListStart
+      \resumeitemone{Drop test is the method used to test ignition delay of hypergolic fuels using either a slow motion camera or optoelectronic circuit(which uses light sensors to detect voltage change)}
+      \resumeitemone{Tested various hypergolic fuels to find replacement for conventionally used fuels which are less toxic and have comparable ignition delay}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Self Learning-----------------
+\section{Self Learning}
+  \resumeSubHeadingListStart
+    \resumesub
+      {Machine Learning}{Columbia,edX [June 2017 - August 2017]}
+      \resumeItemListStart
+        \resumeitemone{Did an online course for better understanding of data analysis tools in parallel to a course on Statistics and Probability offered by our institute}
+        \resumeitemone{Studied unsupervised and supervised learning algorithms like random forest search, logistic regression, K-mean clustering, multi class classification }
+        \resumeitemone{ Used various in-built python Libraries like pandas, Numpy, Skicit-Learn, NLTK }
+
+      \resumeItemListEnd
+      
+    \resumesub
+      {Deep Learning}{Microsoft,edX [March 2019 - present]}
+      \resumeItemListStart
+        \resumeitemone{Studied Artificial Neural Network and how to create such networks using Pytorch and Keras.}
+        \resumeitemone{Used different gradient descent methods for weight calculation and used them to classify images}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{:  Python(), C++,C Sharp, SQL, Java,HTML}
+    
+    }\\[-4cm]
+    \item{
+
+      \textbf{Technologies}{: Simulink(MATLAB), CUDA, \LaTeX}
+    }\\[-4cm]
+    \item{
+
+      \textbf{Operating System}{: Microsoft, Linux}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%----------Extra curricular Activities-----------------
+\section{Extra Curricular Activitiy}
+  \begin{itemize}\itemsep \isep
+    \item
+      {Completed Navy Half Marathon(Mumbai), Cerebral Palsy Half Marathon(Mumbai), Women's Day 10k run(Bangalore) and Max Life Insurance 10k run(Bangalore) and TCS 10k world run(Bangalore). Improved my timing with each race}
+    \item
+      {Part of Institute Kho Kho team which won Silver medal in Spardha(IIT BHU sports Fest)}
+
+      \item
+      {Participated in RC Bot competition and Line Follower competition with a team of 4 people}
+    \item
+    {Awarded hostel color for 2 consecutive years for my involvement i inter-hostel general championship and helping my hostel to bag third position in 4*400 mtr relay, second position in kho-kho and hockey and fourth position in hammer throw}
+         \item
+      {Helped in organisation of techfest'2015-16 and handled accommodation of 3500 participants in our institute with the help of 20 other volunteers}
+      \item
+      {Awarded second place in 2 district level quiz competitions Bharat ko jano and one from Bal Vikas Parishad}
+ 
+  \end{itemize}
+
+
+\end{document}
